@@ -5,7 +5,10 @@ function enviarDados() {
 
   fetch("https://script.google.com/macros/s/AKfycbw-2ICW0ZK5yV-l99qPSqAnhm7LM6oThDUrxSAuF3i0qidDSPWEFvrVpSVTnCSY-vF3/exec", {
     method: "POST",
-    body: JSON.stringify(dados),
+    body: JSON.stringify({
+      codigo: codigo,
+      valores: valores
+    }),
     headers: {
       "Content-Type": "application/json"
     }
