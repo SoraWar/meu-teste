@@ -10,19 +10,19 @@
   <div class="container">
     <h1>CHECKLIST ETA</h1>
     <br/>
-      <input type="text" name="codigo" placeholder="Código" style="margin-top:10px" />
+      <input type="text" id="codigo" name="codigo" placeholder="Código" style="margin-top:10px" />
     <br/>
     <form id="dadosForm">
       <table class="table-form">
         <tr>
-          <td><input type="text" name="valor1" placeholder="Cor" /></td>
-          <td><input type="text" name="valor2" placeholder="RCP" /></td>
-          <td><input type="text" name="valor3" placeholder="pH" /></td>
+          <td><input type="text" class="valor" name="valor1" placeholder="Cor" /></td>
+          <td><input type="text" class="valor" name="valor2" placeholder="RCP" /></td>
+          <td><input type="text" class="valor" name="valor3" placeholder="pH" /></td>
         </tr>
         <tr>
-          <td><input type="text" name="valor4" placeholder="Soda" /></td>
-          <td><input type="text" name="valor5" placeholder="Cloro" /></td>
-          <td><input type="text" name="valor6" placeholder="Retrolavagem" /></td>
+          <td><input type="text" class="valor" name="valor4" placeholder="Soda" /></td>
+          <td><input type="text" class="valor" name="valor5" placeholder="Cloro" /></td>
+          <td><input type="text" class="valor" name="valor6" placeholder="Retrolavagem" /></td>
         </tr>
       </table>
       <button onclick="enviarDados()">Enviar</button>
