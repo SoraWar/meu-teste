@@ -3,7 +3,7 @@ function enviarDados() {
   const inputs = document.querySelectorAll(".valor");
   const valores = Array.from(inputs).map(input => input.value);
 
-  fetch("https://script.google.com/macros/s/AKfycbygyI0afxggPnG0NoNiPYpKZqylPT6xAgFbjdvw03Dofmr0Kh5IkFKvFsFTke2O6fzV/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwJtVYn8exZHnxOtmom5hH8reh9s0FGDXv4szCctZNfamuZWcm7iLOc3vJMyW-_yjQ5/exec", {
     method: "POST",
     body: JSON.stringify({
       codigo: codigo,
