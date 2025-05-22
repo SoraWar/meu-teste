@@ -10,24 +10,30 @@
   <div class="container">
     <h1>CHECKLIST ETA</h1>
     <br/>
-      <input type="text" id="codigo" name="codigo" placeholder="Código" style="margin-top:10px" />
+    <input type="text" id="codigo" name="codigo" placeholder="Código" style="margin-top:10px" />
     <br/>
     <form id="dadosForm">
       <table class="table-form">
         <tr>
-          <td><input type="text" class="valor" name="valor1" placeholder="Cor" /></td>
-          <td><input type="text" class="valor" name="valor2" placeholder="RCP" /></td>
-          <td><input type="text" class="valor" name="valor3" placeholder="pH" /></td>
+          <td><input type="text" class="valor" id="valor1" name="valor1" placeholder="Cor" /></td>
+          <td><input type="text" class="valor" id="valor2" name="valor2" placeholder="RCP" /></td>
+          <td><input type="text" class="valor" id="valor3" name="valor3" placeholder="pH" /></td>
         </tr>
         <tr>
-          <td><input type="text" class="valor" name="valor4" placeholder="Soda" /></td>
-          <td><input type="text" class="valor" name="valor5" placeholder="Cloro" /></td>
-          <td><input type="text" class="valor" name="valor6" placeholder="Retrolavagem" /></td>
+          <td><input type="text" class="valor" id="valor4" name="valor4" placeholder="Soda" /></td>
+          <td><input type="text" class="valor" id="valor5" name="valor5" placeholder="Cloro" /></td>
+          <td><input type="text" class="valor" id="valor6" name="valor6" placeholder="Retrolavagem" /></td>
         </tr>
       </table>
-      <button type="button" onclick="enviarDados()">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
   </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <!-- Seu script -->
   <script src="script.js"></script>
 </body>
 </html>
