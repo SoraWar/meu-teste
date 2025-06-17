@@ -8,7 +8,7 @@ function enviarDados() {
   const valores = Array.from(document.querySelectorAll('.valor')).map(input => input.value);
 
   // URL do seu Web App do Google Apps Script (substitua pelo URL correto)
-  const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbwlUrhVVN1xX15lZrUKLFpb22e73oUCiggKdSO6JOyxtgXddPk7FWe-gZy_stESh6sX/exec';
+  const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbzaq0YmOUSy5G2EDcNR4NE_Pnm85alZsv1rcyFxgmmGlqg1Tmp__OBRyJrfkAkOwA/exec';
 
   fetch(gasWebAppUrl, {
     method: 'POST',
